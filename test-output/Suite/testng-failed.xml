@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.rmgyantra.api.projecttest.CreateProjectCompletedStaus">
+        <methods>
+          <include name="createProjectTest"/>
+          <include name="beforeSuiteConfig"/>
+          <include name="confibAfterSuite"/>
+        </methods>
+      </class> <!-- com.rmgyantra.api.projecttest.CreateProjectCompletedStaus -->
+      <class name="com.rmgyantra.api.projecttest.CreateProject_dataProvider">
+        <methods>
+          <include name="beforeSuiteConfig"/>
+          <include name="createProjectTest" invocation-numbers="0 1 2 3"/>
+          <include name="confibAfterSuite"/>
+        </methods>
+      </class> <!-- com.rmgyantra.api.projecttest.CreateProject_dataProvider -->
+      <class name="com.rmgyantra.api.projecttest.CreateProjectOnGoingStatus">
+        <methods>
+          <include name="createProjectTest"/>
+          <include name="beforeSuiteConfig"/>
+          <include name="confibAfterSuite"/>
+        </methods>
+      </class> <!-- com.rmgyantra.api.projecttest.CreateProjectOnGoingStatus -->
+      <class name="com.rmgyantra.api.projecttest.CreateProject">
+        <methods>
+          <include name="createProjectTest"/>
+          <include name="beforeSuiteConfig"/>
+          <include name="confibAfterSuite"/>
+        </methods>
+      </class> <!-- com.rmgyantra.api.projecttest.CreateProject -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
